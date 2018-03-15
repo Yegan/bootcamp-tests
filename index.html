@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TDD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+        <script>
+            mocha.setup('bdd');
+            var assert = chai.assert;
+        </script>
+
+        <script src="functions/greet.js"></script>
+        <script src="tests/greet.test.js"></script>
+
+
+      <script src="functions/isFromBellville.js"></script>
+      <script src="tests/isFromBellville.test.js"></script>
+
+      <script src="functions/RegCheck.js"></script>
+      <script src="tests/RegCheck.test.js"></script>
+
+      <script src="functions/countRegNumber.js"></script>
+      <script src="tests/countRegNumber.test.js"></script>
+
+      <script src="functions/isWeekDay.js"></script>
+      <script src="tests/isWeekDay.test.js"></script>
+
+      <script src="functions/countAllPaarl.js"></script>
+      <script src="tests/countAllPaarl.test.js"></script>
+
+      <script src="functions/countAllFromTown.js"></script>
+      <script src="tests/countAllFromTown.test.js"></script>
+
+      <script src="functions/fromWhere.js"></script>
+      <script src="tests/fromWhere.test.js"></script>
+
+      <script src="functions/transportFee.js"></script>
+      <script src="tests/transportFee.test.js"></script>
+
+        <script>
+            mocha.checkLeaks();
+            mocha.run();
+        </script>
+  </body>
+</html>
