@@ -1,11 +1,12 @@
-var countAllPaarl = function(Paarl){
-    var regPaarl = [];
-    var reg = Paarl.split(', ');
-    for(var i= 0; i<reg.length;i++){
-      var Paarlreg = reg[i];
-      if(Paarlreg.startsWith('CJ')){
-        regPaarl.push(Paarlreg);
-      }
+function countAllPaarl (regNum){
+  var paarl = [];
+  	var reg = regNum.split(', ');
+  	for (var i = 0; i<reg.length;i++){
+      var registrationNum = reg[i];
+       if (registrationNum.startsWith('CJ')){
+        paarl.push(registrationNum);
+       }
     }
-  return regPaarl.length;
+  return paarl.length;
+
 }
